@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        main: '#FAFAFA',
+                        secondary: '#FFC107',
+                        third: '#BEAF7C',
+                        text_color: '#686868',
+                        text_color2: '#374957',
+                        text_gray: '#6C757D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-main">
+    <!-- Header Section -->
+    <div class="bg-main border-b border-gray-200">
+        <div class="px-4 sm:px-8 py-2 flex justify-between items-center text-text_color border-b border-gray-200">
+            <div class="text-center text-xs text-gray-500 py-1">
+                Free Carbon Neutral Shipping | 60 Day Returns | 100 Day Mattress
+            </div>
+            <div class="hidden lg:flex space-x-4 text-sm text-gray-600">
+                <a href="#" class="hover:text-black font-semibold">About Us</a>
+                <a href="#" class="hover:text-black">Sustainability</a>
+                <a href="#" class="hover:text-black">Trade</a>
+                <a href="#" class="hover:text-black">Design Services</a>
+                <a href="#" class="hover:text-black">Stores</a>
+                <a href="#" class="hover:text-black">Blog</a>
+                <a href="#" class="hover:text-black opacity-50">US</a>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center py-4">
+            <div class="flex items-center space-x-8">
+                <img src="images/LOGO.png" alt="">
+            </div>
+
+            <div class="relative flex items-center mt-4 md:mt-0">
+                <input type="text" placeholder="Search Parachute"
+                    class="border-none rounded-md px-4 py-2 w-full sm:w-64 placeholder:text-gray-400 placeholder:text-sm focus:outline-none bg-[#EDEDED]">
+                <button class="absolute right-3 text-gray-400">
+                    <i class="fa fa-search" style="font-size:18px"></i>
+                </button>
+            </div>
+
+            <!-- Right Section: Icons and Links -->
+            <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                <div class="flex items-center space-x-4 text-gray-600">
+                    <button class="hover:text-black">
+                        <i class="fa fa-heart-o" style="font-size:18px"></i>
+                    </button>
+
+                    <button class="hover:bg-gray-100 p-2 rounded-md flex items-center space-x-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg>
+                        <span>My Account</span>
+                    </button>
+
+                    <button class="hover:bg-gray-100 p-2 rounded-md flex items-center space-x-1">
+                        <i class="fa fa-shopping-cart" style="font-size:18px"></i>
+                        <span>Shopping Cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Navigation Menu -->
+        <div class="border-t border-gray-200 text-black">
+            <div
+                class="container mx-auto px-4 py-2 flex flex-wrap justify-center items-center space-x-2 lg:space-x-6 text-sm text-black">
+                <a href="#" class="hover:text-gray-600 flex items-center gap-1">Bedding <i
+                        class="fa fa-sort-desc text-gray-600 text-xs leading-none"></i></a>
+                <a href="#" class="hover:text-gray-600 flex items-center gap-1">Inserts <i
+                        class="fa fa-sort-desc text-gray-600 text-xs leading-none"></i></a>
+                <a href="#" class="hover:text-gray-600 flex items-center gap-1">Bath <i
+                        class="fa fa-sort-desc text-gray-600 text-xs leading-none"></i></a>
+                <a href="#" class="hover:text-gray-600 flex items-center gap-1">Robes + Loungewear <i
+                        class="fa fa-sort-desc text-gray-600 text-xs leading-none"></i></a>
+                <a href="#" class="hover:text-gray-600 flex items-center gap-1">Furniture <i
+                        class="fa fa-sort-desc text-gray-600 text-xs leading-none"></i></a>
+                <a href="#" class="hover:text-gray-600 flex items-center gap-1">Decor + Living <i
+                        class="fa fa-sort-desc text-gray-600 text-xs leading-none"></i></a>
+                <a href="#" class="hover:text-gray-600 flex items-center gap-1">Featured <i
+                        class="fa fa-sort-desc text-gray-600 text-xs leading-none"></i></a>
+                <a href="#" class="hover:text-gray-600 flex items-center gap-1">Last Chance <i
+                        class="fa fa-sort-desc text-gray-600 text-xs leading-none"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6 rounded-lg">
+        <div class="col-span-1 lg:col-span-2 bg-white p-6 flex flex-col lg:flex-row rounded-lg shadow-md">
+            <div class="w-full lg:w-1/2">
+                <img src="images/brushed-cotton.png" alt="Product Image" class="rounded-lg w-full mb-4">
+                <div class="flex items-center justify-center space-x-2">
+                    <img src="images/thumb1.png" alt="Thumbnail 1" class="w-1/5 h-auto rounded-lg cursor-pointer">
+                    <img src="images/thumb2.png" alt="Thumbnail 2" class="w-1/5 h-auto rounded-lg cursor-pointer">
+                    <img src="images/thumb3.png" alt="Thumbnail 3" class="w-1/5 h-auto rounded-lg cursor-pointer">
+                    <img src="images/thumb4.png" alt="Thumbnail 4" class="w-1/5 h-auto rounded-lg cursor-pointer">
+                </div>
+            </div>
+
+            <div class="w-full lg:w-[396px] mt-6 lg:mt-0 lg:ml-24">
+                <!-- Rest of the content remains as it is -->
+                <div class="w-[396px]">
+                    <h1 class="text-2xl font-semibold text-text_color2 text-gray-800 mb-2">Brushed Cotton Venice Set
+                    </h1>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <div class="text-yellow-500 flex gap-2">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                        <span class="text-text_gray text-sm">5.0 on 22 reviews</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm text-text_gray">
+                        Protect your duvet insert while keeping cozy; this cover feels as good as it looks. Crafted in
+                        Portugal
+                        from 100% premium, certified long-staple Egyptian cotton – our percale sheets are lightweight
+                        and
+                        durable with a crisp finish that only gets better with time.
+                    </p>
+                    <h2 class="text-text_color2 my-2">What's Included:</h2>
+                    <ul class="text-text_gray text-sm list-disc pl-5 mb-4">
+                        <li>1 x Duvet Cover</li>
+                        <li>1 x Sham Set</li>
+                    </ul>
+                    <p class="text-text_color2 text-sm">COLOR</p>
+                    <div class="flex space-x-3 mt-2">
+                        <span class="w-5 h-5 bg-white rounded-full border border-gray-400"></span>
+                        <span class="w-5 h-5 bg-[#F7F6EB] rounded-full border border-gray-400"></span>
+                        <span class="w-5 h-5 bg-[#D6D3C9] rounded-full border border-gray-400"></span>
+                        <span class="w-5 h-5 bg-[#B4B4B4] rounded-full border border-gray-400"></span>
+                        <span class="w-5 h-5 bg-[#C08E85] rounded-full border border-gray-400"></span>
+                        <span class="w-5 h-5 bg-[#879AAC] rounded-full border border-gray-400"></span>
+                        <span class="w-5 h-5 bg-[#B4B4B4] rounded-full border border-gray-400"></span>
+                        <span class="w-5 h-5 bg-[#1E1E1E] rounded-full border border-gray-400"></span>
+                        <span class="w-5 h-5 bg-[#FEAB2F] rounded-full border border-gray-400"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Pricing & Cart -->
+        <div class="col-span-1 bg-white p-4 rounded-lg shadow-md">
+            <div class="flex justify-between items-center">
+                <p class="text-2xl font-semibold text-text_color2">$1,499.00</p>
+                <span class="bg-third text-white rounded-full px-3 capitalize">in stock</span>
+            </div>
+            <p class="text-xs text-text_color py-4 my-6 border-y-2 border-gray-200 mx-2">As low as $33 every 2 weeks
+                with Affirm. <a href="#" class="text-third underline">Learn more</a></p>
+            <div class="mt-4">
+                <p class="font-semibold text-sm text-text_color2">Size: Twin XL</p>
+                <div class="grid grid-cols-5 gap-2 mt-2 text-xs">
+                    <button class="border border-gray-300 line-through py-1 px-2 rounded-md">Twin</button>
+                    <button class="border border-gray-300 py-1 px-2 rounded-md bg-gray-200">Twin XL</button>
+                    <button class="border border-gray-300 py-1 px-2 rounded-md">Full</button>
+                    <button class="border border-gray-300 py-1 px-2 rounded-md">Queen</button>
+                    <button class="border border-gray-300 py-1 px-2 rounded-md">King</button>
+                    <button class="border border-gray-300 py-1 px-2 rounded-md">Cal King</button>
+                </div>
+            </div>
+
+            <div class="flex gap-2 justify-center items-center mt-10 border-t-2 border-gray-200 py-4">
+                <div class="mt-4 flex items-center space-x-3 bg-gray-200 rounded-md">
+                    <button class="px-3 py-2 text-gray-700 rounded-md">-</button>
+                    <span class="text-gray-800">1</span>
+                    <button class="px-3 py-2 text-gray-700 rounded-md">+</button>
+                </div>
+                <button class="mt-4 bg-third text-white py-2 px-6 text-sm rounded-md font-semibold hover:bg-yellow-700">
+                    Add to cart
+                </button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="flex flex-col lg:flex-row gap-4 container mx-auto px-4 mt-2">
+        <div class="w-full lg:w-[2000px] shadow-md">
+            <!-- Review content remains as it is -->
+            <div class="bg-white p-4 rounded-lg shadow-md">
+                <div
+                    class="flex items-center justify-center border-b border-gray-200 pb-2 mb-4 space-x-4 text-sm text-text_color">
+                    <a href="#" class="hover:text-gray-800">About</a>
+                    <a href="#" class="hover:text-gray-800">Details</a>
+                    <a href="#" class="hover:text-gray-800">Materials + Care</a>
+                    <a href="#" class="hover:text-gray-800">Shipping + Returns</a>
+                    <a href="#" class="relative hover:text-gray-800 font-semibold">Reviews
+                        <span class="after:absolute after:-bottom-3 after:-left-2
+                                after:w-20 after:h-1 after:bg-third"></span>
+                        <span class="text-third text-xs absolute -top-2">2</span>
+                    </a>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between px-4 space-x-4">
+                        <div class="flex mt-8">
+                            <img src="images/user1.png" alt="User Image" class="w-12 h-12 rounded-lg">
+                            <div class="flex-col ml-4">
+                                <p class="font-semibold text-text_color2">Ahmed Mohamed</p>
+                                <p class="text-text_gray text-xs mt-1">24 January 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-1 text-yellow-500">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+                    <div class="container pr-20 px-4">
+                        <p class="text-text_color mt-1 border-b-2 border-gray-200 pb-10">Changing our bedroom from
+                            blues
+                            to
+                            earth tones. The raisin duvet
+                            cover goes perfectly with other earth tones. Love the feel of percale and how it keeps
+                            me
+                            cool as a hot sleeper.</p>
+                    </div>
+
+                    <div class="flex items-center justify-between px-4 space-x-4">
+                        <div class="flex">
+                            <img src="images/user2.png" alt="User Image" class="w-12 h-12 rounded-lg">
+                            <div class="flex-col ml-4">
+                                <p class="font-semibold text-text_color2">Khalid Mohammed</p>
+                                <p class="text-text_gray text-xs mt-1">15 January 2023</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-1 text-yellow-500">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+                    <div class="container pr-20 px-4">
+                        <p class="text-text_color mt-1 border-b-2 border-gray-200 pb-10">These sheets made such a
+                            difference
+                            for me. Even if you sleep hot,
+                            you won't sweat with the moisture wicking. Just buy them!</p>
+                    </div>
+
+                    <div class="flex justify-center mt-4 space-x-2">
+                        <button class="px-4 py-2 bg-gray-200 text-gray-700 text-sm rounded-md">
+                            <i class="fa fa-sort-desc text-gray-600 transform rotate-90 translate-x-1"></i>
+                        </button>
+                        <button class="px-4 py-2 bg-gray-200 text-gray-700 text-sm rounded-md">1</button>
+                        <button class="px-4 py-2 bg-gray-200 text-gray-700 text-sm rounded-md">2</button>
+                        <button class="px-4 py-2 bg-third text-white text-sm rounded-md">3</button>
+                        <button class="px-4 py-2 bg-gray-200 text-gray-700 text-sm rounded-md">4</button>
+                        <button class="px-4 py-2 bg-gray-200 text-gray-700 text-sm rounded-md">
+                            <i class="fa fa-sort-desc text-gray-600 transform -rotate-90 -translate-x-1"></i>
+                        </button>
+                    </div>
+
+                    <div class="px-4 sm:px-8">
+                        <h1 class="my-6 text-lg sm:text-2xl text-text_color2 font-semibold">Write A Review</h1>
+
+                        <!-- Review Form -->
+                        <div class="flex flex-col sm:flex-row sm:gap-6 mt-8 sm:mt-16">
+                            <!-- Rating Input -->
+                            <div class="flex flex-col mb-4 sm:mb-0">
+                                <label for="rating" class="text-xs my-2 text-text_color">Review Stars</label>
+                                <input type="number" name="rating" id="rating" placeholder="5 Stars Rating"
+                                    class="bg-[#EBEBEB] p-2 placeholder:text-gray-400 placeholder:text-sm focus:outline-none rounded-md w-full sm:w-auto">
+                            </div>
+
+                            <!-- Name Input -->
+                            <div class="flex flex-col mb-4 sm:mb-0">
+                                <label for="name" class="text-xs my-2 text-text_color">Your Name</label>
+                                <input type="text" name="name" id="name" placeholder="Your Name"
+                                    class="bg-[#EBEBEB] p-2 placeholder:text-gray-400 placeholder:text-sm focus:outline-none rounded-md w-full sm:w-auto">
+                            </div>
+
+                            <!-- Email Input -->
+                            <div class="flex flex-col">
+                                <label for="email" class="text-xs my-2 text-text_color">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="Email Address"
+                                    class="bg-[#EBEBEB] p-2 placeholder:text-gray-400 placeholder:text-sm focus:outline-none rounded-md w-full sm:w-auto">
+                            </div>
+                        </div>
+
+                        <!-- Review Textarea -->
+                        <div class="flex flex-col mt-4">
+                            <label for="Review" class="text-xs my-2 text-text_color">Your Review</label>
+                            <textarea name="Review" id="Review" cols="5" rows="10"
+                                class="bg-[#EBEBEB] outline-none w-full h-40 sm:h-[170px] resize-none rounded-md p-2"></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button
+                            class="bg-third text-white px-4 py-2 rounded-md mt-6 sm:my-8 text-sm w-full sm:w-auto">Post
+                            Your Review</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="w-full lg:w-[700px] h-fit bg-white p-8 shadow-md rounded-md">
+            <!-- Content remains as it is -->
+            <h1 class="text-text_color2 text-xl mb-4">Plush Perfection</h1>
+            <div class="flex gap-4 items-center my-2">
+                <img src="images/fet3.png" class="w-20" alt="fet3">
+                <div class="flex flex-col">
+                    <h3 class="text-sm text-text_color2">See it in Person</h3>
+                    <p class="underline text-third text-xs mt-2">Find a store</p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-center my-2">
+                <img src="images/fet1.png" class="w-20" alt="fet3">
+                <div class="flex flex-col">
+                    <h3 class="text-sm text-text_color2">SOeko-Tex certified</h3>
+                    <p class="underline text-third text-xs mt-2">Learn more</p>
+                </div>
+            </div>
+            <div class="flex gap-4 items-center my-2">
+                <img src="images/fet2.png" class="w-20" alt="fet3">
+                <div class="flex flex-col">
+                    <h3 class="text-sm text-text_color2">Climate Neutral</h3>
+                    <p class="underline text-third text-xs mt-2">Shipping + Returns</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Cards Section -->
+    <div class="bg-main">
+        <div class="max-w-7xl mx-auto p-6">
+            <div class="flex justify-between items-center">
+                <h2 class="text-text_color2 text-2xl font-semibold">New Arrivals</h2>
+                <div>
+                    <div class="flex gap-4"><i
+                            class="fa fa-sort-asc -rotate-90 p-2 border border-third text-third rounded"></i> <i
+                            class="fa fa-sort-asc rotate-90 p-2 bg-third text-white rounded"></i></div>
+                </div>
+            </div>
+
+            <!-- Product List -->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 my-6 pt-6 border-t-2 border-gray-200">
+                <!-- Product Card -->
+                <div class="bg-white shadow-lg rounded-lg p-4 transform transition hover:scale-105 hover:shadow-xl">
+                    <img src="images//slide1.png" alt="Product Image" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-sm font-medium !text-text_color2">Brushed Cotton Duvet Cover</h3>
+                    <div class="flex items-center text-xs gap-2 mt-2">
+                        <div class="text-yellow-500 flex gap-2">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                        <span class="text-text_gray text-xs">5 on 22 reviews</span>
+                    </div>
+                    <div class="flex items-end justify-between h-20">
+                        <p class="mt-1 text-text_color2 text-sm font-medium">$170.00 <span
+                                class="text-[10px] line-through text-gray-400">$200.00</span></p>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-4 transform transition hover:scale-105 hover:shadow-xl">
+                    <img src="images//slide2.png" alt="Product Image" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-sm font-medium !text-text_color2">Linen Euro Sham</h3>
+                    <div class="flex items-center text-xs gap-2 mt-2">
+                        <div class="text-yellow-500 flex gap-2">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                        <span class="text-text_gray text-xs">5 on 22 reviews</span>
+                    </div>
+                    <div class="flex items-end justify-between h-20">
+                        <p class="mt-1 text-text_color2 text-sm font-medium">$159.00 <span
+                                class="text-[10px] line-through text-gray-400">$200.00</span></p>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-4 transform transition hover:scale-105 hover:shadow-xl">
+                    <i class="fa fa-heart-o absolute right-3"></i>
+                    <img src="images//slide3.png" alt="Product Image" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-sm font-medium !text-text_color2">Percale Sheet Set</h3>
+                    <div class="flex items-center text-xs gap-2 mt-2">
+                        <div class="text-yellow-500 flex gap-2">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                        <span class="text-text_gray text-xs">5 on 22 reviews</span>
+                    </div>
+                    <div class="flex items-end justify-between h-20">
+                        <p class="mt-1 text-text_color2 text-sm font-medium">$349.00 <span
+                                class="text-[10px] line-through text-gray-400">$415.00</span></p>
+                        <i class="fa fa-shopping-cart bg-third text-white p-1 rounded-full"></i>
+                    </div>
+
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-4 transform transition hover:scale-105 hover:shadow-xl">
+                    <img src="images//slide4.png" alt="Product Image" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-sm font-medium !text-text_color2">Linen Venice Set</h3>
+                    <div class="flex items-center text-xs gap-2 mt-2">
+                        <div class="text-yellow-500 flex gap-2">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                        <span class="text-text_gray text-xs">5 on 22 reviews</span>
+                    </div>
+                    <div class="flex items-end justify-between h-20">
+                        <p class="mt-1 text-text_color2 text-sm font-medium">$300.00 <span
+                                class="text-[10px] line-through text-gray-400">$400.00</span></p>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+
+                </div>
+                <div class="bg-white shadow-lg rounded-lg p-4 transform transition hover:scale-105 hover:shadow-xl">
+                    <img src="images//slide5.png" alt="Product Image" class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-sm font-medium !text-text_color2">Brushed Cotton Venice Set</h3>
+                    <div class="flex items-center text-xs gap-2 mt-2">
+                        <div class="text-yellow-500 flex gap-2">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i>
+                        </div>
+                        <span class="text-text_gray text-xs">5 on 22 reviews</span>
+                    </div>
+                    <div class="flex items-end justify-between h-20">
+                        <p class="mt-1 text-text_color2 text-sm font-medium">$100.00 <span
+                                class="text-[10px] line-through text-gray-400">$200.00</span></p>
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Float Section -->
+            <div
+                class="mt-10 bg-white transform translate-y-16 shadow-lg rounded-lg p-6 flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+                <div class="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-6">
+                    <div class="flex items-center gap-2 text-text_color">
+                        <img src="images/ser1.png" alt="Climate + Earth">
+                        <p class="text-sm font-medium">Climate + Earth</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-text_color">
+                        <img src="images/ser2.png" alt="Responsible Materials">
+                        <p class="text-sm font-medium">Responsible Materials</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-text_color">
+                        <img src="images/ser3.png" alt="Diversity, Equity + Inclusion">
+                        <p class="text-sm font-medium">Diversity, Equity + Inclusion</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-text_color">
+                        <img src="images/ser4.png" alt="Ethical Manufacturing">
+                        <p class="text-sm font-medium">Ethical Manufacturing</p>
+                    </div>
+                </div>
+                <button class="text-third hover:bg-gray-700 text-sm underline font-medium lg:mt-0">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="bg-[#333333] text-gray-300 py-8 pt-20 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <!-- Column 1: Trademark and Social Media -->
+                    <div>
+                        <p class="text-sm text-white">
+                            Parachute® is a registered trademark of Parachute Home Inc. in the US and certain other
+                            jurisdictions.
+                        </p>
+                        <p class="mt-4 text-white">Follow Us</p>
+                        <p class="mt-4 text-xs mb-6">@parachutehome</p>
+
+                        <div class="flex space-x-2 mt-2 text-gray-400">
+                            <a href="#" class="hover:text-white p-2 bg-pink-500 rounded-full"><img
+                                    src="images/instagram.png" class="w-3 h-3" alt="instagram"></a>
+                            <a href="#" class="hover:text-white p-2 bg-red-600 rounded-full"><img
+                                    src="images/pinterest-p.png" class="w-3 h-3" alt="pinterest"></a>
+                            <a href="#" class="hover:text-white p-2 bg-blue-500 rounded-full"><img
+                                    src="images/facebook-f.png" class="w-3 h-3" alt="facebook"></a>
+                            <a href="#" class="hover:text-white p-2 bg-blue-400 rounded-full"><img
+                                    src="images/twitter.png" class="w-3 h-3" alt="twitter"></a>
+                            <a href="#" class="hover:text-white p-2 bg-red-500 rounded-full"><img
+                                    src="images/youtube.png" class="w-3 h-3" alt="youtube"></a>
+                            <a href="#" class="hover:text-white p-2 bg-black rounded-full"><img src="images/tiktok.png"
+                                    class="w-3 h-3" alt="tiktok"></a>
+                            <a href="#" class="hover:text-white p-2 bg-blue-600 rounded-full"><img
+                                    src="images/linkedin-in.png" class="w-3 h-3" alt="linkedin-in"></a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Help Links -->
+                    <div>
+                        <h3 class="text-sm font-semibold mb-2 text-white">Help</h3>
+                        <ul class="space-y-4 text-xs">
+                            <li><a href="#" class="hover:underline">Contact Us</a></li>
+                            <li><a href="#" class="hover:underline">FAQ</a></li>
+                            <li><a href="#" class="hover:underline">Track Your Order</a></li>
+                            <li><a href="#" class="hover:underline">Returns</a></li>
+                            <li><a href="#" class="hover:underline">Care</a></li>
+                            <li><a href="#" class="hover:underline">Do Not Sell My Personal Information</a></li>
+                            <li><a href="#" class="hover:underline">Accessibility</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Company Links -->
+                    <div>
+                        <h3 class="text-sm font-semibold mb-2 text-white">Company</h3>
+                        <ul class="space-y-4 text-xs">
+                            <li><a href="#" class="hover:underline">About Us</a></li>
+                            <li><a href="#" class="hover:underline">Mentorship Program</a></li>
+                            <li><a href="#" class="hover:underline">Press</a></li>
+                            <li><a href="#" class="hover:underline">Careers</a></li>
+                            <li><a href="#" class="hover:underline">Trade</a></li>
+                            <li><a href="#" class="hover:underline">Hospitality</a></li>
+                            <li><a href="#" class="hover:underline">Affiliates</a></li>
+                            <li><a href="#" class="hover:underline">Brand Ambassador</a></li>
+                            <li><a href="#" class="hover:underline">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Shop Links -->
+                    <div>
+                        <h3 class="text-sm font-semibold mb-2 text-white">Shop</h3>
+                        <ul class="space-y-4 text-xs">
+                            <li><a href="#" class="hover:underline">Digital Gift Card</a></li>
+                            <li><a href="#" class="hover:underline">Swatches</a></li>
+                            <li><a href="#" class="hover:underline">Stores</a></li>
+                            <li><a href="#" class="hover:underline">Design Services</a></li>
+                            <li><a href="#" class="hover:underline">The Instagram Shop</a></li>
+                            <li><a href="#" class="hover:underline">Reviews</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
+                    <p>© Copyrights 2023 <span class="px-2">|</span>
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                        <span class="px-2">|</span>
+                        <a href="#" class="hover:underline">Terms of Use</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
