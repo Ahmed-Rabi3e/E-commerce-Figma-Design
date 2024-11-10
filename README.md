@@ -1,11 +1,12 @@
 Figma Design Link  https://www.figma.com/design/BETtHZE5vvFvQjNBlqSD39/Untitled?node-id=0-1&t=iuyvUM4NqMASI2pH-1
 
 # E-commerce Figma Design (intern)
-<img src="/public/Screenshot%201.png" align="left" width="47%"/>
-  <img src="/public/Screenshot%202.png" align="right" width="47%"/>
-  
-  <img src="/public/Screenshot%203.png" align="center" width="100%"/>
-  <img src="/public/Screenshot%204.png" align="center" width="100%"/>
+  <img src="https://github.com/Ahmed-Rabi3e/E-commerce-Figma-Design/blob/main/images/assets/Screen%20Shot-1.png" align="center" width="100%"/>
+  <img src="https://github.com/Ahmed-Rabi3e/E-commerce-Figma-Design/blob/main/images/assets/Screen%20Shot-2.png" align="center" width="100%"/>
+  <img src="https://github.com/Ahmed-Rabi3e/E-commerce-Figma-Design/blob/main/images/assets/Screen%20Shot-3.png" align="center" width="100%"/>
+  <img src="https://github.com/Ahmed-Rabi3e/E-commerce-Figma-Design/blob/main/images/assets/Screen%20Shot-4.png" align="center" width="100%"/>
+  <img src="https://github.com/Ahmed-Rabi3e/E-commerce-Figma-Design/blob/main/images/assets/Screen%20Shot-5.png" align="center" width="100%"/>
+
   
 # Installation
 
