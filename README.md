@@ -1,4 +1,4 @@
-ÏFigma Design Link  https://www.figma.com/design/BETtHZE5vvFvQjNBlqSD39/Untitled?node-id=0-1&t=iuyvUM4NqMASI2pH-1
+Figma Design Link  https://www.figma.com/design/BETtHZE5vvFvQjNBlqSD39/Untitled?node-id=0-1&t=iuyvUM4NqMASI2pH-1
 
 # E-commerce Figma Design (intern)
   <img src="https://github.com/Ahmed-Rabi3e/E-commerce-Figma-Design/blob/main/images/assets/Screen%20Shot-1.png" align="center" width="100%"/>
